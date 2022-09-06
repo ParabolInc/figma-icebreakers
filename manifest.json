@@ -1,0 +1,11 @@
+{
+  "name": "Parabol Icebreakers",
+  "id": "1148981702866739024",
+  "api": "1.0.0",
+  "main": "bundle.js",
+  "editorType": [
+    "figjam"
+  ],
+  "containsWidget": true,
+  "widgetApi": "1.0.0"
+}
