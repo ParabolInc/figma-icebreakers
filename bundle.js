@@ -986,10 +986,10 @@
                     figma.widget.h(AutoLayout, { name: "button", fill: "#493272", cornerRadius: 72, overflow: "visible", direction: "vertical", padding: {
                             vertical: 4,
                             horizontal: 24,
+                        }, onClick: () => {
+                            setIcebreaker((0, api_1.generateRandomIcebreaker)((0, api_1.allIcebreakers)()));
                         } },
-                        figma.widget.h(Text, { name: "Gimme another one", fill: "#FFF", verticalAlignText: "center", lineHeight: 32, fontFamily: "IBM Plex Sans", fontWeight: 500, onClick: () => {
-                                setIcebreaker((0, api_1.generateRandomIcebreaker)((0, api_1.allIcebreakers)()));
-                            } }, "Refresh")))));
+                        figma.widget.h(Text, { name: "Gimme another one", fill: "#FFF", verticalAlignText: "center", lineHeight: 32, fontFamily: "IBM Plex Sans", fontWeight: 500 }, "Refresh")))));
         }
         widget.register(Widget);
     });

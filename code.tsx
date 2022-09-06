@@ -168,6 +168,9 @@ function Widget() {
             vertical: 4,
             horizontal: 24,
           }}
+          onClick={() => {
+            setIcebreaker(generateRandomIcebreaker(allIcebreakers()))
+          }}
         >
           <Text
             name="Gimme another one"
@@ -175,10 +178,7 @@ function Widget() {
             verticalAlignText="center"
             lineHeight={32}
             fontFamily="IBM Plex Sans"
-            fontWeight={500}
-            onClick={() => {
-              setIcebreaker(generateRandomIcebreaker(allIcebreakers()))
-            }}
+            fontWeight={500} 
           >
             Refresh
           </Text>
