@@ -1,3 +1,16 @@
+# Icebreakers for Figma
+
+A widget for FigJam with our icebreaker collection.
+
+## Setup and start
+
+```ts
+npm install
+npm run watch
+```
+
+## Figma instructions
+
 Below are the steps to get your widget running. You can also find instructions at:
 
 https://www.figma.com/widget-docs/setup-guide/
