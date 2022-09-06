@@ -62,13 +62,13 @@ function Widget() {
       ]}
       fill="#FFF"
       cornerRadius={8}
-      overflow="visible"
+      overflow="hidden"
       direction="vertical"
       spacing={0}
       padding={{
         top: 0,
         right: 0,
-        bottom: 24,
+        bottom: 0,
         left: 0,
       }}
       width={600}
@@ -153,7 +153,7 @@ function Widget() {
         padding={{
           top: 24,
           right: 8,
-          bottom: 8,
+          bottom: 32,
           left: 8,
         }}
         width="fill-parent"
@@ -185,6 +185,45 @@ function Widget() {
             Refresh
           </Text>
         </AutoLayout>    
+      </AutoLayout>
+      <AutoLayout
+        name="footer"
+        overflow="visible"
+        direction="horizontal"
+        spacing={4}
+        padding={{
+          top: 12,
+          right: 0,
+          bottom: 12,
+          left: 0,
+        }}
+        width="fill-parent"
+        verticalAlignItems="center"
+        horizontalAlignItems="center"
+        fill="#F8F7FC"
+      >
+        <Text
+            name="Do more"
+            fill="#82809A"
+            verticalAlignText="center"
+            fontSize={16}
+            lineHeight={24}
+            fontFamily="IBM Plex Sans"
+          >
+            Do more
+          </Text>
+          <Text
+            name="with Parabol."
+            fill="#82809A"
+            verticalAlignText="center"
+            fontSize={16}
+            lineHeight={24}
+            fontFamily="IBM Plex Sans"
+            href="https://www.parabol.co"
+            textDecoration="underline"
+          >
+            with Parabol.
+          </Text>
       </AutoLayout>
     </AutoLayout>
   );
