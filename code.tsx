@@ -3,7 +3,7 @@
 import { allIcebreakers, generateRandomIcebreaker } from "./api"
 
 const { widget } = figma
-const { useSyncedState, usePropertyMenu, AutoLayout, Frame, Text, SVG } = widget
+const { useSyncedState, usePropertyMenu, AutoLayout, Frame, Text, SVG, Line } = widget
 
 function Widget() {
   const [icebreaker, setIcebreaker] = useSyncedState('icebreaker', {question: 'Placeholder'})
@@ -64,18 +64,17 @@ function Widget() {
       cornerRadius={8}
       overflow="visible"
       direction="vertical"
-      spacing={8}
+      spacing={0}
       padding={{
         top: 0,
         right: 0,
         bottom: 24,
         left: 0,
       }}
-      width={576}
+      width={600}
     >
       <AutoLayout
         name="top"
-        stroke="#E0DDEC"
         overflow="visible"
         direction="vertical"
         spacing={8}
@@ -116,12 +115,17 @@ function Widget() {
           />
         </Frame>
       </AutoLayout>
+      <Line
+        length={600}
+        stroke="#E0DDEC"
+        strokeWidth={1}
+       />
       <AutoLayout
         name="icebreaker"
         overflow="visible"
         spacing={8}
         padding={{
-          top: 24,
+          top: 32,
           right: 32,
           bottom: 16,
           left: 32,
@@ -132,7 +136,8 @@ function Widget() {
       >
       <Text 
         fontFamily="IBM Plex Sans"
-        fontSize={22}
+        fontSize={24}
+        fill="#493272"
         width="fill-parent"
         horizontalAlignText={'center'}>
         {icebreaker.question}
