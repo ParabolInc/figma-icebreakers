@@ -72,6 +72,8 @@ function Widget() {
         left: 0,
       }}
       width={600}
+      stroke="#C3C0D8"
+      strokeWidth={1}
     >
       <AutoLayout
         name="top"
@@ -117,7 +119,7 @@ function Widget() {
       </AutoLayout>
       <Line
         length={600}
-        stroke="#E0DDEC"
+        stroke="#C3C0D8"
         strokeWidth={1}
        />
       <AutoLayout
