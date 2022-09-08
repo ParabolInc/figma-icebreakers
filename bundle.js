@@ -997,7 +997,7 @@
                         left: 0,
                     }, width: "fill-parent", verticalAlignItems: "center", horizontalAlignItems: "center", fill: "#F8F7FC" },
                     figma.widget.h(Text, { name: "Do more", fill: "#82809A", verticalAlignText: "center", fontSize: 16, lineHeight: 24, fontFamily: "IBM Plex Sans" }, "Do more"),
-                    figma.widget.h(Text, { name: "with Parabol.", fill: "#82809A", verticalAlignText: "center", fontSize: 16, lineHeight: 24, fontFamily: "IBM Plex Sans", href: "https://www.parabol.co", textDecoration: "underline" }, "with Parabol."))));
+                    figma.widget.h(Text, { name: "with Parabol.", fill: "#82809A", verticalAlignText: "center", fontSize: 16, lineHeight: 24, fontFamily: "IBM Plex Sans", href: "https://www.parabol.co/?utm_campaign=icebreakers&utm_medium=figma-widget&utm_source=figjam", textDecoration: "underline" }, "with Parabol."))));
         }
         widget.register(Widget);
     });

@@ -219,7 +219,7 @@ function Widget() {
             fontSize={16}
             lineHeight={24}
             fontFamily="IBM Plex Sans"
-            href="https://www.parabol.co"
+            href="https://www.parabol.co/?utm_campaign=icebreakers&utm_medium=figma-widget&utm_source=figjam"
             textDecoration="underline"
           >
             with Parabol.
