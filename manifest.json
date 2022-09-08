@@ -4,7 +4,8 @@
   "api": "1.0.0",
   "main": "bundle.js",
   "editorType": [
-    "figjam"
+    "figjam",
+    "figma"
   ],
   "containsWidget": true,
   "widgetApi": "1.0.0"
