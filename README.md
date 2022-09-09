@@ -5,8 +5,8 @@ A widget for FigJam with our icebreaker collection.
 ## Setup and start
 
 ```ts
-npm install
-npm run watch
+yarn
+yarn watch
 ```
 
 ## Figma instructions

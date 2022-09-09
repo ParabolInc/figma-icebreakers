@@ -2,7 +2,7 @@
   "name": "Parabol Icebreakers",
   "id": "1149784500071706375",
   "api": "1.0.0",
-  "main": "bundle.js",
+  "main": "dist/bundle.js",
   "editorType": [
     "figjam",
     "figma"
