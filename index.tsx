@@ -1,10 +1,12 @@
 import { allIcebreakers, generateRandomIcebreaker } from "./api"
 
 const { widget } = figma
-const { useSyncedState, usePropertyMenu, AutoLayout, Frame, Text, SVG, Line } = widget
+const { useSyncedState, AutoLayout, Frame, Text, SVG, Line } = widget
+
+const PARABOL_URI = `https://www.parabol.co/?utm_campaign=icebreakers&utm_medium=figma-widget&utm_source=${figma.editorType}`
 
 function Widget() {
-  const [icebreaker, setIcebreaker] = useSyncedState('icebreaker', {question: 'Placeholder'})
+  const [icebreaker, setIcebreaker] = useSyncedState('icebreaker', () => generateRandomIcebreaker(allIcebreakers()))
 
   return (
     <AutoLayout
@@ -120,7 +122,7 @@ function Widget() {
         fill="#493272"
         width="fill-parent"
         horizontalAlignText={'center'}>
-        {icebreaker.question}
+        {icebreaker?.question}
       </Text>
     </AutoLayout>  
     <AutoLayout
@@ -197,7 +199,7 @@ function Widget() {
             fontSize={16}
             lineHeight={24}
             fontFamily="IBM Plex Sans"
-            href="https://www.parabol.co/?utm_campaign=icebreakers&utm_medium=figma-widget&utm_source=figjam"
+            href={PARABOL_URI}
             textDecoration="underline"
           >
             with Parabol.
